@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+    <style>
+        .box1{
+            width:500px;
+            height:500px;
+            overflow:auto;
+            background-color: aqua;
+            background-image: url("./background_picture/2.jpg");
+            background-repeat:no-repeat;
+            background-position: 0 0;
+            padding:10px;
+            
+            /* background-size设置背景图片大小
+            可选值：第一个值表示宽度 第二个值表示高度 
+            如果只写一个值，则第二个默认是auto
+            cover图片的比例不变，将元素铺满
+            contain图片比例不变，将图片在元素中显示*/
+            background-size:contain;
+        }
+        .box2{
+            width:300px;
+            height:1000px;
+            background-color: chartreuse;/*相对于视口定位*/
+            background-position: 100px 100px;
+            background-image: url("./background_picture/1.jpg");
+            background-repeat: no-repeat;
+            /*background-attachment背景图片是否跟随元素移动
+            可选值：scroll默认值，背景图片会跟随元素移动  fixed背景图片会固定在页面中，不会随元素移动 */
+            background-attachment:fixed;
+        }
+        .box3{
+            padding:10px;
+            border:10px red double;
+            width:500px;
+            height:500px;
+            /*background背景简写属性，所有背景相关的样式都可以通过该样式来设置
+            并且样式没有顺序之分，也没有哪个属性必须写
+注意：background-siz必须写在 background-position后边，并且使用/隔开  background-position/background-siz
+background-origin和background-clip两个样式，origin要写在clip的前边*/
+            background: url("background_picture/2.jpg") #bfa center center/contain border-box  ;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="box3"></div>
+    <!-- <div class="box1">
+        <div class="box2">hhhhh</div>
+    </div> -->
+    
+</body>
+</html>

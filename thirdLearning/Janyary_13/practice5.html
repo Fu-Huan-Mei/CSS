@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老师做的:网易科技列表</title>
+    <link rel="stylesheet" href="../css.style/reset.css">
+    <style>
+        body{
+            background-color: aqua;
+        }
+        /*设置容器央样式*/
+        .news-wrapper{
+            /*设置宽度*/
+            width:300px;
+            /*设置高度*/
+            height:357px;
+            /*居中*/
+            margin:50px auto;
+            /*背景颜色*/
+            background-color: #fff;
+            /*设置上边框*/
+            border:1px solid #ddd;
+        }
+        /*设置news-title*/
+        .news-title{
+            /*为了变宽和文字一致：需要将h2转为行内块元素*/
+            display: inline-block;
+            /*设置宽度*/
+            height:30px;
+            /*设置上边框*/
+            border-top:1px solid #f34540 ;
+            /*通过margin-top将h2上移，盖住上边框*/
+            margin-top:-1px;
+            padding-top:10px;
+        }
+        /*设置title中超链接的样式*/
+        .news-title a{
+            /*去除下划线*/
+            text-decoration: none;
+            /*字体颜色*/
+            color:#40406B;
+            /*设置文字加粗*/
+            font-weight: bold;
+        }
+        /*设置图片容器高度：防止下边的文字向上移动*/
+        .news-img{
+            height:150px;
+        }
+        /*设置图片的文字效果*/
+        .news-img .img-title{
+            /*向上移动文字*/
+            margin-top:-30px;
+            /*字体颜色*/
+           color:#fff;
+           padding-left: 30px;;
+        }
+        /*设置新闻列表*/
+        .news-list{
+            margin-top:20px;
+            /* padding-left:14px; */
+        }
+        /*设置li*/
+        .news-list li{
+            margin-bottom:17px ;
+        }
+        /*设置li中的文字*/
+        .news-list li a{
+            text-decoration: none;
+            /*设置字体大小*/
+            font-size: 14px;
+            color:#666;
+        }
+        /*通过before伪元素为每一个li添加项目符号*/
+        .news-list li::before{
+            content:"■";
+            color:#DDD;
+            font-size: 12PX;
+            margin-right:4px;
+        }
+        /*设置超链接鼠标移入效果*/
+        .news-list li a:hover{
+            color:#f34540;
+        }
+    </style>
+</head>
+<body>
+    <!--创建列表容器-->
+    <div class="news-wrapper">
+        <!--创建标题标签-->
+        <h2 class="news-title">
+            <a href="#">科技</a>
+        </h2>
+
+        <!--创建图片容器-->
+        <div class="news-img">
+            <a href="#"><img src="../picture/4.jpg">
+                <!--创建图片标题-->
+                <h3 class="img-title">网易科技揭晓 “2022中国十大科技”</h3>
+            </a>
+        </div>
+
+        <!--创建新闻列表-->
+        <ul class="news-list">
+            <li>
+                <a href="#">掀起全球价格战？刚刚，特斯拉再次降价</a>
+            </li>
+            <li>
+                <a href="#">余承东回应华为问界降价</a>
+            </li>
+            <li>
+                <a href="#">波音737MAX在中国恢复商业运营</a>
+            </li>
+            <li>
+                <a href="#">库克2023年薪自降五成至3.3亿元</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体的简写属性</title>
+    <style>/*第一遍理解记忆：2023-1-20*/
+        div{
+        border:1px solid red;
+        line-height:100px;
+        /*1、font：
+        （1）含义：指定字体相关的所有属性
+        （2）语法：font：字体大小/行高 字体族 
+        （3）注意：行高（可以省略，默认值）
+        2、font-weight
+        （1）作用：设置字体加粗
+        （2）可选值：normal表示默认值，不加粗、bold表示加粗、100~900九个级别*/
+        font:50px/2 serif;
+        font-weight: 600;
+        /*3、font-style
+        （1）作用：设置字体风格
+        （2）可选值：normal正常的(默认值)、italic斜体*/
+        font-style:italic;
+    }
+    </style>
+    
+</head>
+<body>
+    <div>今天是晴天啊</div>
+</body>
+</html>

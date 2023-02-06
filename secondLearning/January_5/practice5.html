@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VW简介</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box1{
+            width:100vw;
+            height:100px;
+            background-color:deeppink;
+        }
+    </style>
+</head>
+<body>
+    <!--不同的设备完美视口大小不一样
+    iphone6完美视口：375
+    iphone6plus完美视口：414
+    不同设备的视口和像素比不同，同样的375像素在不同设备下意义不同
+所以在移动端开发时，对网页就不能再使用像素进行布局-->
+    <div class="box1">
+        <div class="box2">
+            <div class="box3"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

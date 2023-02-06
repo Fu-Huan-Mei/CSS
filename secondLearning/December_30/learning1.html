@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻列表</title>
+    <link rel="stylesheet" href="../December_29/css/reset.css">
+    <style>
+       /*设置容器样式*/
+        .news-wrapper{
+            width:300px;
+            height: 357px;
+            /*设置背景颜色，显示轮廓*/
+            background-color:aqua;
+            /*使图片居中*/
+            margin:50px auto;
+            /*设置上边框*/
+            border-top:1px solid #ddd;
+        }
+        /*设置news-title*/
+        .news-title{
+            /*为了边框和文字的宽度一致，需要将h3转换为行内块元素*/
+            display:inline-block;
+            height:30px;
+            border-top:1px red solid;
+            /*通过margin-top将h2上移，盖住上边框*/
+            margin-top:-1px;
+            padding-top:10px;
+        }
+        /*设置news-title中a的样式*/
+        .news-title a{
+            /*去除下划线*/
+            text-decoration: none;
+            /*设置颜色*/
+            color:#40406B;
+            /*设置文字的加粗效果*/
+            font-weight:bold;
+        }
+        /*色湖之图片容器的高度*/
+        .news-img{
+            height:150px;
+        }
+        /*设置图片中文字的效果*/
+        .news-img .img-title{
+            margin-top:-30px;
+            /*去除下划线*/
+            text-decoration: none;
+            /*设置字体颜色*/
+            color:#fff;
+            /*设置文字的加粗效果*/
+            font-weight:bold;
+            padding-left:30px;
+        }
+        /*设置新闻列表*/
+        .news-list{
+            margin-top:20px;
+            padding-left:15px;
+           
+        }
+        /*设置li*/
+        .news-list li{
+            margin-bottom:16.4px;
+        }
+        /*设置li中的文字*/
+        .news-list li a{
+            font-size: 14px;
+            color:#666;
+           
+             /*去除下划线*/
+            text-decoration: none;
+        }
+        /*通过before伪元素来为每一个li添加项目符号*/
+        .news-list li:before{
+            content:'▪';
+            color:rgb(218,218,218);
+            font-size:12px;
+            margin-left: 2px;
+        }
+
+        .news-list li a:hover{
+            color:red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--创建新闻列表外层容器-->
+    <div class="news-wrapper">
+        <!--创建一个标题标签-->
+        <h2 class="news-title">
+            <a href="#">体育</a>
+        </h2>
+        <!--创建一个图片容器-->
+        <div class="news-img">
+            <a href="#"><!--确保点击图片或文字都可以触发超链接-->
+                <img src="./picture/01.webp" alt="球王贝利">
+                <!--创建一个图片标题-->
+                <h3 class="img-title">
+                    悼念球王 梅西晒与贝利合照:安息吧
+                </h3>
+        </a>
+        </div>
+
+        <!--新闻列表-->
+        <ul class="news-list">
+            <li>
+                <a href="#">贝利走了,但江湖永远有他的传说</a>
+            </li>
+
+            <li>
+                <a href="#">名记说出扎心一语 比八冠王降级更恐怖</a>
+            </li>
+
+            <li>
+                <a href="#">篮网突然就复活了?这个白胡子老头真有两手</a>
+            </li>
+
+            <li>
+                <a href="#">恒大将0投入继续运营广州队 成绩啥样无所</a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clearfix</title>
+    <style>
+        /*第一遍理解记忆：2023-1-18*/
+        .box1{
+            width:200px;
+            height:200px;
+            background-color: aqua;
+        }
+        /*解决外边距重叠*/
+        /* .box1::before{
+            content:'';
+            display: table;
+            
+        } */
+        /*解决高度塌陷*/
+        /* .box1::after{
+            content:'';
+            display:table;
+            clear:both;
+        } */
+        /*多功能类：即可解决高度塌陷，又可解决外边距重叠（记住即可）*/
+        .clearfix::before,
+        .clearfix::after{
+            content:'';
+            display: table;
+            clear:both;
+        }
+        .box2{
+            width:100px;
+            height:100px;
+            background-color: chartreuse;
+            margin-top:100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 clearfix">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

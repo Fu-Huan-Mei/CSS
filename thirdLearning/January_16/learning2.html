@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮廓阴影和圆角</title>
+    <style>
+        .box1{
+            width:200px;
+            height:200px;
+            background-color: aqua;
+             /*第一遍理解记忆：2023-1-16*/
+ /*阴影
+ 1、box-shadow：设置元素的阴影效果，不会影响页面布局
+ 2、可选值
+ （1）第一个值：水平偏移量，设置阴影的水平位置，正值向右移动，负值向左移动
+ （2）第二个值：垂直偏移量，设置阴影的垂直位置，正值向上移动，负值向下移动
+ （3）第三个值：阴影的模糊半径
+ （4）第四个值：阴影颜色*/ 
+            box-shadow:10px 10px 10px rgba(0,0,0,.3);
+        }
+        .box1:hover{
+/*轮廓
+1、outline：设置元素的轮廓线，用法和border一样
+2、轮廓和边框不同点：轮廓不会影响可见框的大小，即不会影响页面的布局*/
+            outline: 10px red solid;
+        }
+        .box2{
+            width:200px;
+            height:200px;
+            background-color: chartreuse;
+            border-top-left-radius:50px;
+            border-radius: 20px/40px;
+/*圆角
+1、border-radius：设置圆角，圆角设置圆的半径大小；可以分别指定四个角的圆角
+四个值：左上 右上 右下 左下（顺时针旋转）
+三个值：左上 右上/左下 右下
+两个值：左上/右下 右上/左下
+2、border-top-left-radius
+3、border-top-right-radius
+4、border-bottom-left-radius
+5、border-bottom-right-radius
+6、圆形：border-radius:50%;*/
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1"></div>
+    <spann>hello</spann> -->
+    <div class="box2"></div>
+</body>
+</html>

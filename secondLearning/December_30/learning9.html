@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷的终极解决方案</title>
+    <style>
+        .box1{
+            border:10px blueviolet dashed;
+            /* overflow:hidden;*//*开启BF才解决高度塌陷 */
+        }
+        .box2{
+            width:100px;
+            height:200px;
+            background-color: chartreuse;
+            float:left;/*会产生高度塌陷问题 */
+        }
+        .box3{/*box3的作用:撑起box2的高度*/
+            clear:both;/*box3默认设置上外边距*/
+        }
+        
+        /*利用伪元素::after行内元素来解决高度塌陷问题*/
+        .box1::after{
+            display:block;
+            content:'';
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3"></div> -->
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>样式的继承</title>
+    <style>
+         /*2023-1-11：第一遍理解记忆*/
+        /*
+        1、特点：为一个元素设置样式的同时也会应用到后代元素上
+        2、优点：
+        （1）方便开发
+        （2）将通用样式统一设置到共同的祖先元素上，只设一次即可应用
+        3、注意：并非所有样式都会被继承 eg:背景 布局 等*/
+        p{
+            color:red; 
+            background-color: aqua;
+        }
+        div{
+            color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <p>                  
+        我是一个p元素
+        <span>我是p元素中的span</span>
+    </p>
+    <span>我是p元素外的span</span>
+    <div>
+        我是div
+        <span>
+            我是div中的span
+            <em>我是span中的em</em>
+        </span>
+    </div>
+</body>
+</html>

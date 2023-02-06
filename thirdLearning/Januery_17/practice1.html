@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我做的W3School导航条</title>
+    <!--重置样式-->
+    <link rel="stylesheet" href="../css.style/reset.css">
+    <style>
+        /*??没有设置完成字体的水平居中效果*/
+        *{
+            /*去除下划线*/
+            text-decoration: none;
+        }
+        /*设置外部容器样式*/
+        .outer-wrapper{
+           width:1210px;
+           height:48px;
+           background-color:#E8E7E3;
+           /*水平居中*/
+           margin:100px auto;
+
+        }
+        li{
+            /*元素水平排列*/
+            float:left;
+           
+        }
+        a{
+            display: block;
+            /*文字垂直居中*/
+            line-height:48px;
+            
+           
+        }
+        /*设置每个a的宽度*/
+        .item1{
+            width:166px;
+            
+
+           
+            
+        }
+        .item2{
+            width:191px;
+        }
+        .item3{
+            width:175px;
+        }
+        .item4{
+            width:198px;
+        }
+        .item5{
+            width:113px;
+        }
+        .item6{
+            width:197px;
+        }
+        .item7{
+            width:170px;
+        }
+        /*设置超链接样式*/
+        a{ 
+            
+            bottom:0;
+            /*设置字体颜色*/
+            color:#777; 
+            /*设置字体样式*/
+            font-family:"SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC", Verdana, Arial, '微软雅黑','宋体';
+		    /*设置字体大小*/
+            font-size:20px;
+          
+        }
+        a:hover{
+             /*鼠标移入后背景颜色*/
+            background-color:#3F3F3F;
+            /*鼠标移入后字体颜色？？我这里设置有问题：我移入文字才会变成白色，但是原效果是只要移入整个li字体颜色就会变白
+            因为我的宽度是给li设置的宽度，应该给a整个超链接设置宽度，才会实现网页中现实的效果*/
+            color: #e8e7e3;
+        }
+        
+        
+
+    </style>
+    
+</head>
+<body>
+    <!--创建外部容器outer-wrapper-->
+    <ul class="outer-wrapper">
+        <!--创建内部容器-->
+        <li>
+            <a  class="item1" href="#">HTML/CSS</a>
+        </li>
+        <li >
+            <a class="item2" href="#">Browser Side</a>
+        </li>
+        <li>
+            <a  class="item3" href="#">Server Side</a>
+        </li>
+        <li >
+            <a class="item4" href="#">Programming</a>
+        </li>
+        <li >
+            <a class="item5" href="#">XML</a>
+        </li>
+        <li >
+            <a class="item6" href="#">Web Building</a>
+        </li>
+        <li >
+            <a class="item7" href="#">Reference</a>
+        </li>
+
+    </ul>
+</body>
+</html>

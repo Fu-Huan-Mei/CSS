@@ -1,0 +1,58 @@
+//导航条外部容器
+.top-bar{
+    height:48px;
+    padding:0 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+//设置左侧导航图标
+.left-menu{
+    //图标
+    .menu-icon{
+        width:18px;
+        height:48px;
+        position: relative;
+        //导航线
+        li{
+            width:18px;
+            height:1px;
+            background-color: #fff;
+            position: absolute;
+            //修改变形原点
+            transform-origin: left center;
+            transition: 0.5s;
+        }
+        li:nth-child(1){
+            top:18px;
+            //向下旋转
+            // transform: rotateZ(40deg);
+        }
+        li:nth-child(2){
+            top:24px;
+            //隐藏
+            // visibility: hidden;
+            // opacity: 0;//纯透明效果
+        }
+        li:nth-child(13){
+            top:30px;
+        }
+        &:hover{
+            li:nth-child(1){
+               
+                //向下旋转
+                transform: rotateZ(40deg);
+            }
+            li:nth-child(2){
+               
+                //隐藏
+                // visibility: hidden;
+                opacity: 0;//纯透明效果
+            }
+            li:nth-child(13){
+               transform: rotateZ(-40deg);
+            } 
+        }
+    }
+}

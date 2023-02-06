@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图标字体</title>
+    <link rel="stylesheet" href="../FontAwesome/css/all.css">
+    <style>/*第一遍理解记忆：2023-1-18*/
+        li{
+            list-style: none;
+        }
+/*5、（2）通过伪元素设置图标字体
+第一步，找到要设置图标的元素，再通过before或after选中
+第二步，在content中设置字体编码
+第三步，设置字体样式*/
+        li::before{
+
+            content:'\f1b0';
+            /* fab  font-family:'Font Awesome 5 Brands'; */
+            /* fas   font-family:'Font Awesome 5 Free' ;  font-weight:900; */
+            font-family:'Font Awesome 5 Free' ;  
+            font-weight:900;
+        }
+    </style>
+</head>
+<body>
+    <!--图标字体(iconfont)
+1、概述:在网页中经常需要使用一些图标，可以通过图片来引入图标；
+但是图片较大，并且不灵活；在使用图标时，可以将图标设置为字体
+2、引入：font-face形式对字体引入，通过使用字体的形式来使用图标
+3、图标字体库：Iconfont、Font Awesome、
+4、使用步骤：
+（1）下载
+（2）解压
+（3）将css和webfonts移动到项目中
+（4）将css和webfonts文件保存在同一级目录下
+（5）将all.css引入网页中-
+5、使用图标字体：-->
+    <!--（1）直接通过类名使用图标字体:主要有两类：fas和fab-->
+    <!-- <i class="fas fa-bell" ></i>
+    <i class="fas fa-bell-slash" style="font-size:100px;color:red;" ></i>
+    <i class="fab fa-accessible-icon" style="font-size:100px;color:black;"></i>
+    <i class="fas  fa-beer" style="font-size:100px;color:deeppink;"></i> -->
+   <!--（2）通过伪元素设置图标字体-->
+    <ul>
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁知盘中餐</li>
+        <li>粒粒皆辛苦</li>
+    <!--（3）通过实体设置图标字体:&#x图标编码;-->
+    <span class="fas">&#xf0f3;</span>
+    </ul>
+
+    
+</body>
+</html>

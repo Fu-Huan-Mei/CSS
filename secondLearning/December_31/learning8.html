@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体族</title>
+    <style>
+        /* @font-face可以将服务器中的字体直接提供给用户去使用
+        问题：加载速度、版权、字体格式（浏览器的兼容性）*/
+        @font-face{
+            font-family:my-font;/*指定字体名字*/
+            src:url();/*服务器中字体的路径*/
+           
+        }
+        p{
+            color:chartreuse;
+            font-size:80px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* font&background
+字体相关样式 color设置字体颜色 font-size相关的单位 em相当于当前元素的一个font-size rem相当于根元素的一个font-sze
+font-family字体族（字体格式），可以同时指定多个字体，多个字体之间使用,隔开，第一个无法使用则使用第二个，以此类推
+可选值：serif衬线字体  sans-serif非衬线字体  monospace等宽字体 cursive fantasy-指定字体类别，浏览器会自动使用该类别下的字体
+*/
+
+        }
+    </style>
+</head>
+<body>
+    <p>
+        hello,how are you?你最近还好吗？
+    </p>
+    
+</body>
+</html>

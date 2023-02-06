@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-边框</title>
+    <style>
+        .box1{  
+            width:200px;
+            height:200px;
+            background-color: darkorchid;
+        /*
+        1、边框：属于盒子得边缘，边框里属于盒子内部，边框外属于盒子外部
+        2、设置边框： 至少需要设置3个样式
+        3、边框的宽度：border-width 
+        （1）默认值：3px
+        （2）用来指定边框4个方向（上右下左）边框的宽度，顺时针旋转
+        （3）值的情况：4个：上右下左（顺时针旋转）、3个：上 左右 下、2个:上下 左右、1个：上下左右
+        （4）除了border-width，还有border-xxx-width：top right bottom left,单独指定某一边的宽度
+        4、边框的颜色：border-color，规则与border-width一样；如果省略，则自动使用color颜色
+        5、边框的样式:border-style：solid表示实线,dotted表示点状虚线，dashed虚线，double表示双线
+        6、边框大小会影响整个盒子的大小
+        7、border简写属性：border:10px solid orange
+        8、border-top
+
+        */
+            border:10px dotted orangered;
+            border-top:none;
+            /* border-width:10px;
+            border-color:aqua;
+            border-style:double; */
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    
+</body>
+</html>

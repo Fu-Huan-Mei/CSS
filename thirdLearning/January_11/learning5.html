@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+         /*2023-1-11：第一遍理解记忆*/
+        /*1、语法：[属性名] 选择含有指定属性元素*/
+        p[title]{
+            color:fuchsia;
+        }
+        /*2、语法：[属性名=属性值] 选择含有指定属性名和属性值的元素*/
+        p[title=abc]{
+            color:aqua;
+        }
+        /*3、语法：[属性名^=属性值] 选择属性值以指定值开头的元素*/
+        p[title^=abcdef]{
+            color:chartreuse;
+        }
+        /*4、语法：[属性名$=属性值] 选择属性值以指定值结尾的元素*/
+        p[title$=hello]{
+            color:deeppink;
+        }
+        /*5、语法：[属性名*=属性值] 选择属性值中含有某值元素的元素*/
+        p[title*=e]{
+            color:deepskyblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <p title="abcdef">少小离家老大回</p>
+    <p title="abcdef">乡音无改鬓毛衰</p>
+    <p title="helloef">儿童相见不相识</p>
+    <p>笑问客从何处来</p>
+    
+</body>
+</html>

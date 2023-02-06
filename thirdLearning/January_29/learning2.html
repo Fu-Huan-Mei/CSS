@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机像素</title>
+    <style>
+        .box1{
+            width:900px;
+            height:100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--
+1、在不同的屏幕中，单位像素的大小是不同的：像素越小，屏幕越清晰 eg:24寸是1920*1080  4.7寸是750*1334
+2、手机像素点 < 计算机像素点
+3、问题：默认情况下，移动端的网页都会将视口设置为980像素(css像素)；以确保PC端网页可以在移动端正常访问，
+但是如果网页宽度超过了980，移动端的浏览器会自动对网页缩放以完整显示网页；
+所以基本大多数PC端网站都会在移动端正常浏览，但不会有好的体验
+4、解决问题：PC端和移动端各自设计网站-->
+        <div class="box1"></div>
+</body>
+</html>

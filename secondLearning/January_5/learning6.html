@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>less</title>
+    <style>
+        html{
+            /*css支持变量的设置*/
+            --color:yellow;
+            --length:200px;
+        }
+        .box1{
+            width:var(--length);
+            height:200px;
+            /*背景颜色*/
+            background-color:yellow;
+        }
+        .box2{
+            /*calc()计算函数*/
+            width:calc(200px*2);
+            height:100px;
+            /*字体颜色*/
+            color:red;
+            font-size: 50px;
+        }
+        .box3{
+            width:100px;
+            height:100px;
+            /*边框颜色*/
+            border:10px solid var(--color);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">aaaaa</div>
+    <div class="box2">aaaaa</div>
+    <div class="box3">aaaaa</div>
+    
+</body>
+</html>

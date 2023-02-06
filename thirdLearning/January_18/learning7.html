@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>元素的层级</title>
+    <style>/*第一遍理解记忆：2023-1-18*/
+        body{
+            font-size: 50px;
+        }
+        .box1{
+            width:200px;
+            height:200px;
+            background-color: aqua;
+            position: absolute;
+            /* z-index:3; */
+/*
+1、概述：对于开启定位元素，通过z-index属性来指定元素的层级
+2、参数：整数，值越大，元素的层级越高，越优先显示；如果元素层级一样，优先显示靠下的元素*/
+        }
+        .box2{
+            width:200px;
+            height:200px;
+            background-color:rgba(255,255,25,.5);
+            /*元素开启绝对定位后，相对于根元素进行定位，并且元素层级提升了*/
+            position: absolute;
+            top:50px;
+            left:50px;
+        }
+        .box3{
+            width:200px;
+            height:200px;
+            background-color:deeppink;
+             /*元素开启绝对定位后，相对于根元素进行定位，并且元素层级提升了*/
+            position: absolute;
+            top:100px;
+            left:100px;
+            /* z-index:3; */
+        }
+/*3、注意：祖先元素的层级再高也不会盖住后代元素  eg:box3是box4的祖先元素，box4是box3的后代元素*/
+        .box4{
+            width:50px;
+            height:50px;
+            background-color:forestgreen;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3
+        <div class="box4">4</div>
+    </div>
+</body>
+</html>

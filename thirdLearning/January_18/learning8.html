@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体族</title>
+    <style>/*第一遍理解记忆：2023-1-18*/
+        p{
+            /*1、字体相关样式*/
+            /*（1）color：设置字体颜色*/
+            color:red;
+            /*（2）font-size：设置字体大小*/
+            font-size:40px;
+            /*（3）font-family：
+            作用：字体族（字体格式），可以同时指定多个字体，多个字体间使用,隔开
+            可选值：指定字体类别，浏览器会自动使用该类别下的字体
+                serif：衬线字体
+                sans-serif：非衬线字体
+                monospace：等宽字体
+            使用：字体生效时优先使用第一个，第一个无法使用则用第二个，以此类推
+            */
+            font-family: 'Courier New', Courier, monospace;
+            /*3、font-size字体大小的单位
+            （1）em相当于当前元素的一个font-size
+            （2）rem相当于根元素的font-size*/
+            /*4、font-face可以将服务器中的字体直接提供给用户使用*/
+            @font-face {
+            /*（1）font-family指定字体名字*/
+                font-family: "my-font";
+            /*（2）src：服务器中字体路径*/
+                src: url("#") foemat("truetype");
+            /*（3）问题：加载速度；版权；字体格式*/
+            }
+               
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <p>
+        今天天气真不错!hello hello
+    </p>
+</body>
+</html>

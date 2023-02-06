@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子模型-水平方向的布局</title>
+    <style>
+        .outer{
+            width:800px;
+            height:200px;
+            background-color: chartreuse;
+
+            border:10px darkorange dashed;
+        }
+        /*
+        1、盒子的水平布局（横向布局）：
+        margin-left+border-left+padding-left+width+padding-right+border-right+margin-right=其父元素内容区的宽度（必须满足）
+        */
+        .inner{
+            width:100px;
+            height:200px;
+            background-color: aqua;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+    
+</body>
+</html>

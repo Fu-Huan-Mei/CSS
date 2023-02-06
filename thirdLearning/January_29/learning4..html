@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vw单位:移动端页面</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box1{
+/*
+1、vw表示视口宽度(viewport width)；vw这个单位相对于视口宽度进行计算  
+eg:100vw=一个视口宽度   1vw=1%视口宽度
+2、常见设计图的宽度 750px 1125px
+   设计图 750px
+   使用vw作为单位
+   100vw = 750px(设计图的像素)    750px是一个视口大小*/
+            width:100vw;
+            height:100vw;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

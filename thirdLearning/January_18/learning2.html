@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>/*第一遍理解记忆：2023-1-18*/
+        body{
+            font-size: 50px;;
+        }
+        .box1{
+            width:200px;
+            height:200px;
+            background-color: aqua;
+        }
+        .box2{
+            width:200px;
+            height:200px;
+            background-color:coral;
+/*定位(position)
+1、概述：更加高级的布局手段，通过定位可以将元素摆放到页面的任意位置
+2、设置：position属性来设置定位
+3、可选值：
+（1）static：默认值，元素是静止的，没有开启定位
+（2）relatively：开启元素的相对定位
+（3）absolute：开启元素的绝对定位
+（4）fixed：开启元素的固定定位
+（5）sticky：开启元素的粘滞定位*/
+/*4、相对定位
+（1）开启：当元素的position属性值设置为relative时，则开启了元素的相对定位
+（2）特点：
+第一个：元素开启相对定位后，如果不设置偏移量，则元素不会发生任何变化
+第二个：相对定位是参照于元素自身在文档流中的位置定位（元素自身最初位置）
+第三个：相对定位会提升元素的层级
+第四个：相对定位不会使元素脱离文档流
+第五个：相对定位不会改变元素的性质（块元素还是块元素、行内元素还是行内元素）
+5、偏移量(offset)：
+（1）概念：当元素开启了定位以后，可以通过偏移量来设置元素的位置
+（2）可选值：
+top：定位元素和定位位置上边的距离
+bottom：定位元素和定位位置下边的距离
+垂直方向的位置：定位元素垂直方向的位置由top和bottom两个属性共同决定，通常情况下只会使用其一；
+top值越大，定位元素越向下移动；bottom值越大，定位元素越向上移动
+left：定位元素和定位位置左边的距离
+right：定位元素和定位位置右边的距离
+水平方向的位置：由left和right共同决定，left越大元素越靠右，right值越大元素越靠左
+6、定位位置：当top和left都为0时，就可找到定位位置*/
+            position:relative;
+            top:-200px;
+            left:200px; 
+            /* bottom:200px;  */
+            /*当top和left都为0时，就可找到定位位置*/
+            /* top:0;
+            left:0; */
+        }
+        .box3{
+            width:200px;
+            height:200px;
+            background-color:deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

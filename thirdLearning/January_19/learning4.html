@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文本的水平和垂直居中</title>
+    <style>/*第一遍理解记忆：2023-1-20*/
+        div{
+            font-size:50px;
+            height:200px;
+            width:500px;
+            border:1px solid red;
+            /*text-align
+            1、作用：设置文本的水平对齐
+            2、可选值：left左侧对齐、right右侧对齐、center居中对齐、justify两端对齐*/
+            text-align:center;
+        }
+        span{
+            font-size:20px;
+            border:1px black solid;
+            /* vertical-align
+            1、作用：设置元素的垂直对齐方式
+            2、可选值：baseline默认值，基线对齐、top顶部对齐、bottom底部对齐、middle居中对齐*/
+            vertical-align: baseline;
+            /* vertical-align: middle; */
+        }
+        p{
+            border:1px red solid;
+        }
+        /*问题：图片和边框之间出现了一条缝隙
+        解决：把图片的verticla-align：top/bottom/middle即可解决这条缝隙*/
+        img{
+            vertical-align: top;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <img src="../picture/1.png">
+    </p>
+    <!-- <div>
+        今天天气<span>真不错 hello</span>
+    </div> -->
+    <!-- <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, in numquam. Dolore ullam mollitia optio nesciunt vitae atque voluptatem non officia facilis expedita suscipit nam dolores, nisi fuga quam consequuntur.
+    </div> -->
+</body>
+</html>

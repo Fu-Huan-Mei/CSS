@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体特性</title>
+    <style>
+        /*
+        1、width视口宽度
+        2、height视口高度
+        3、min-width视口最小宽度(视口大于指定宽度时生效)
+        4、max-width视口最大宽度(视口小于指定宽度时生效)*/
+        /*5、断点：样式切换的分界点，即网页的样式再该点时会发生变化；
+        6、常用断点
+        （1）小于768 超小屏幕  max-width=768px
+        （2）大于768 小屏幕  min-width=768px
+        （3）大于992 中型屏幕  min-width=992px
+        （4）大于200 大屏幕  min-width=1200px*/
+        /*7、关系：或(,)、和(and)、*/
+        @media(min-width:500px),(max-width:700px){
+            body{
+                background-color: deeppink;
+            }
+        }
+        @media(min-width:500px) and (max-width:700px){
+            body{
+                background-color: deeppink;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

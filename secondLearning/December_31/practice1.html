@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图</title>
+    <link rel="stylesheet" href="../December_29/css/reset.css">
+    <style>
+        /*设置图片容器*/
+        .img-list{
+            width:590px;
+            height:470px; 
+            margin:100px auto;
+        /*为ul开启相对定位，目的是使ul中的position可以相对于ul定位，而不是相对于初始包含块html定位*/
+            position:relative; 
+            
+            
+        }
+        /*设置li*/
+        .img-list li{
+            position:absolute;
+        }
+        /*通过修改元素的层级来显示指定的图片*/
+        .img-list li:nth-child(1){
+            z-index:1;
+        }
+        /**/
+        .pointer{
+            /*开启绝对定位：相对于网页来定位，网页html就是包含块*/
+            position:absolute;
+            z-index:9999;
+            bottom:20px;
+            left:40px;
+
+        }
+        /*设置导航条点的样式,但是a是行内元素*/
+        .pointer a{
+            /* display:block; */
+            /*设置元素向左浮动*/
+            float:left;
+            width:10px;
+            height:10px;
+            margin:0 4px;
+            /*设置圆点*/
+            border-radius: 50%;
+            background-color:rgba(255,255,255,.4);
+            /*将背景颜色只设置到内容区，边框和内边距不再具有背景颜色*/
+            background-clip: content-box;
+            /*使所有的圆点都一样大*/
+            border:2px solid transparent;
+        }
+        .pointer a.active,
+        .pointer a:hover{
+            background-color: #fff;
+            border:2px solid rgba(255, 255, 255, 0.4);
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <!--ul是一个块元素-->
+    <ul class="img-list">
+        <li><a href="javascript:;"><img src="./picture/01.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./picture/02.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./picture/03.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./picture/04.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./picture/05.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./picture/06.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./picture/07.jpg"></a></li>
+        <li><a href="javascript:;"><img src="./picture/08.jpg"></a></li>
+
+        <div class="pointer"><!--用超链接来设置导航条点-->
+            <a class="active" href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+            <a href="javascript:;"></a>
+        </div>
+    </ul>
+
+    
+</body>
+</html>

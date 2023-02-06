@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秒针</title>
+    <style>
+        /*钟表旋转的原理：是指针外面的容器在旋转*/
+        *{
+            margin:0;
+            padding:0;
+        }
+        .sec-wrapper{
+            width:500px;
+            height:500px;
+            /* background-color: aqua; */
+            animation: run 60s;
+        }
+        .sec{/*旋转的是秒针外边的容器*/
+            height:250px;
+            width:4px;
+            background-color: crimson;
+            margin:0 auto;
+        
+            /* animation: run 60s; */
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: rotateZ(45deg); */
+        }
+        @keyframes run{
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sec-wrapper">
+        <div class="sec"></div>
+    </div>
+   
+  
+</body>
+</html>

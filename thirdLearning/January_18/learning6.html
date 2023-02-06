@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位元素的布局</title>
+    <style>/*第一遍理解记忆：2023-1-18*/
+        .box1{
+            width:500px;
+            height:500px;
+            background-color: aqua;
+            position:relative;
+        }
+        .box2{
+/*垂直布局
+1、垂直方向布局等式：top+margin-top/bottom+padding-top/bottom+border-top/bottom+height=包含块的高度
+*/
+            width:100px;
+            height:100px;
+            background-color: coral;
+            position:absolute;
+            /*元素水平居中*/
+            left:0;
+            right:0;
+            margin-left:auto;
+            margin-right:auto;
+            /*元素垂直居中*/
+            top:0;
+            bottom:0;
+            margin-top:auto;
+            margin-bottom:auto;
+            /*元素垂直水平双方向居中*/
+            /* position: absolute;
+            margin:auto;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0; */
+/*
+水平布局
+1、水平布局(7个值）：margin-left + border-left + padding-left + width + padding-right + border-right 
++ margin-right = 包含块的内容区的宽度
+2、开启绝对定位的水平布局(9个值)：增加了left和right两个值
+left+margin-left + border-left + padding-left + width + padding-right + border-right 
++ margin-right+right = 包含块的内容区的宽度
+3、开启绝对定位后，水平方向的布局等式就需要添加left和right两个值，此时规则和之前一样只是多添加了两个值；
+4、当发生过度约束时的情况：
+（1）如果9个值中没有auto，则自动调整right值以使等式满足
+（2）如果9个值中有auto，则自动调整auto值以使等式满足
+可以设置auto的值:margin width left right
+（3）left和right的默认值是auto，所以如果不知道left和right的值时，则等式不满足，会自动调整left和right两个值*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

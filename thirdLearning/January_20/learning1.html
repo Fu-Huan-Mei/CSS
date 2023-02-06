@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景</title>
+    <style>
+        /*第一次理解记忆：2023-1-21*/
+        .box1{
+            width:500px;
+            height:500px;
+            /*1、 background-color：设置背景颜色*/
+            background-color: aqua;
+            /*2、background-image：
+            （1）作用：设置背景图片
+            （2）如果背景图片小于元素，则背景图片会自动在元素中平铺将元素铺满
+            （3）如果背景图片大于元素，则背景图片的一部分将无法完全显示
+            （4）如果背景图片和元素一样大，则会直接正常显示*/
+            background-image: url(../picture/1.png);
+            /*3、 background-repeat：
+            （1）作用：设置背景的重复方式
+            （2）可选值：
+             repeat：默认值，背景会沿着x轴和y轴双方向重复
+             repeat-x：背景会沿着x轴方向重复
+             repeat-y：背景会沿着y轴方向重复
+             no-repeat：背景图片不重复
+            */
+            background-repeat: initial;
+            /*4、background-position
+            （1）作用：设置背景图片的位置
+            （2）设置方式：
+            方位词：top bottom right left 表示方位词来设置背景位置
+            偏移量：水平方向偏移量和垂直方向偏移量
+            （3）注意：使用方位词时，必须同时指定两个值，如果只写第一个，则第二个值默认是center*/
+            background-position: right;
+            /*5、background-clip  不熟悉
+            （1）作用：设置背景的范围
+            （2）可选值：
+            border-box：默认值，背景会出现在边框的下边
+            padding-box：背景不会出现在边框，只出现在内容区和内边距
+            content-box：背景只会出现在内容区*/
+            background-clip: content-box;
+            border:10px red double;
+            /*6、background-origin
+            （1）作用：背景图片偏移量的计算原点
+            （2）可选值
+            padding-box：默认值，background-position从内边距处开始计算
+            content-box：背景图片的偏移量从内容区处计算
+            border-box：背景图片的偏移量从边框处开始计算
+            （3）偏移量？？？*/
+            background-origin: border-box;
+            /*7、 background-size
+            （1）作用：设置背景图片大小
+            （2）可选值：如果只写一个，则第二个值默认auto
+            第一个值表示宽度
+            第二个值表示高度
+            cover图片比例不变，将元素铺满
+            contain图片比例不变，将图片在元素中完整显示*/
+            background-size:  contain;
+        }
+        .box2{
+            width:300px;
+            height:1000px;
+            background-color:orange;
+            background-image: url("../picture/2.png");
+            background-repeat: no-repeat;
+            /*8、background-attachment
+            （1）作用：设置图片是否跟随元素移动
+            （2）可选值：
+            scroll默认值，背景图片跟随元素移动
+            fixed背景图片固定在页面中，不会跟随元素移动
+            */
+            background-attachment: fixed;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2" ></div>
+    </div>
+</body>
+</html>

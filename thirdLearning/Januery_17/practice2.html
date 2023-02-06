@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>老师的W3School导航条</title>
+    <link rel="stylesheet" href="../css.style/reset.css">
+    <style>
+        /*设置nav大小*/
+        .nav{
+            width:1210px;
+            height:48px;
+            background-color: #E8E7E3;
+            /*水平居中*/
+            margin:100px auto;
+        }
+        /**/
+        .nav li{
+            /*设置li向左浮动，使菜单横向排列*/
+            float:left;
+            /*设置li的高度*/
+            height:48px;
+            /*将元素在父元素中垂直居中*/
+            line-height: 48px;
+        }
+        /*设置a的样式*/
+        .nav a{
+            
+            /*将a转为块元素*/
+            display: block;
+            /*去除下划线*/
+            text-decoration: none;
+            /*设置字体颜色*/
+            color:#777;
+            /*设置字体大小*/
+            font-size: 18px;
+            padding:0 39px;
+        }
+        .nav li:last-child a{
+            padding:0 42px 0 41px;
+        }
+        .nav a:hover{
+            /*背景颜色*/
+            background-color:#3F3F3F ;
+            /*字体颜色*/
+            color:#E8E7E3;
+
+        }
+    </style>
+</head>
+<body>
+     <!--创建外部容器outer-wrapper-->
+     <ul class="nav">
+        <!--创建内部容器-->
+        <li class="item1">
+            <a href="#">HTML/CSS</a>
+        </li>
+        <li class="item2">
+            <a href="#">Browser Side</a>
+        </li>
+        <li class="item3">
+            <a href="#">Server Side</a>
+        </li>
+        <li class="item4">
+            <a href="#">Programming</a>
+        </li>
+        <li class="item5">
+            <a href="#">XML</a>
+        </li>
+        <li class="item6">
+            <a href="#">Web Building</a>
+        </li>
+        <li class="item7">
+            <a href="#">Reference</a>
+        </li>
+
+    </ul>
+    
+</body>
+</html>

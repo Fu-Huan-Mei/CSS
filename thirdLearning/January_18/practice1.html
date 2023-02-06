@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东轮播图练习（不熟悉）</title>
+    <link rel="stylesheet" href="../css.style/reset.css">
+    <style>
+        /*设置图片列表样式*/
+        .img-list{
+            width:590px;
+            height:470px;
+            /*设置图片的居中效果*/
+            margin: 100px auto;
+            /*为ul开启相对定位，使ul中的pointer相对于ul定位而不是相对于初始包含快即html定位*/
+            position: relative;
+           
+        }
+        /*设置li*/
+        .ing-list li{
+            
+            position: absolute;
+        }
+        /*新知识：记住啦！！！通过修海元素的层级来显示指定的图片*/
+        .img-list li:nth-child(3){
+            z-index:1;
+        }
+        img{
+            width:590px;
+            height:470px; 
+            /*离它最近的开启了定位的祖先元素*/
+            position: absolute; 
+        }
+        /*设置导航点的样式*/
+
+        .pointer{
+            position:absolute;
+            z-index:999;
+            top:450px;
+        }
+        /*设置导航点的样式*/
+        .pointer a{
+            /* display: block; */
+            /*设置元素向左浮动*/
+            float:left;
+            width:10px;
+            height:10px;
+            margin:0px 4px;
+            /*设置圆点*/
+            border-radius: 50%;
+            background-color:rgba(255,255,255,.6);
+            /*将背景颜色值设置到内容区，边框和内容区不再有背景颜色*/
+            background-clip:content-box ;
+            border:2px solid transparent;
+        }
+        /*设置鼠标点击和移入状态*/
+        .pointer a.active,
+        .pointer a:hover{
+            background-color: #fff;
+            border:2px solid rgba(255,255,255,.6);
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="img-list" >
+        <li>
+            <a href="#">
+                <img src="./picture/1.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./picture/2.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./picture/3.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./picture/4.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./picture/5.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./picture/6.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./picture/7.jpg">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./picture/8.jpg">
+            </a>
+        </li>
+        <div class="pointer">
+            <a class="active" href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>颜色单位</title>
+    <style>
+        /*2023-1-12：第一遍理解记忆*/
+        .box1{
+            width:100px;
+            height:100px;
+            /*1、颜色名：设置各种颜色  eg:red green yellow purple 等*/
+            background-color:yellow;
+            /*2、rgb值：
+            （1）概述：RGB通过3种颜色的不同浓度来调配出不同的颜色；r=red,g=green,b=blue；
+            （2）取值范围：每种颜色的范围都在0~255（0%~100%）之间
+            （3）语法：RGB(红色，绿色，蓝色)*/
+            color: rgb(255,0,0);
+            color:rgb(0,255,0);
+            color:rgb(0,0,255);
+            color:rgb(255,255,255);
+            color:rgb(0,0,0);
+            /*3、rgba值：在RGB的基础上增加a表示不透明度
+            （1）取值范围：RGB每种颜色的范围都在0~255（0%~100%）之间，
+            a的值：1表示完全不透明，0表示完全透明，.5表示半透明*/
+            /*4、十六进制的RGB值
+            （1）语法：#红绿蓝
+            （2）颜色浓度：00~ff
+            （3）简写：如果颜色两位两位重复可以简写*/
+            color:#fff;/*可简写*/
+            color:#fff001;
+        }
+        .box2{
+            width:200px;
+            height:200px;
+        /*5、HSL值
+        （1）H表示色相（色环）：0~360
+        （2）S表示饱和度 ：颜色浓度：0%~100%
+        （3）L表示亮度：颜色亮度：0%~100% */
+            background-color: hsl(150, 50%, 50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">我是div</div>
+    <div class="box2"></div>
+</body>
+</html>

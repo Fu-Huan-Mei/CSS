@@ -1,0 +1,27 @@
+//混合函数
+.test(@w,@h,@bg-color){
+    width:@w;
+    height:@h;
+    border:1px solid @bg-color;
+}
+div{
+    //调用混合函数，按顺序传递参数
+    // .test(200px,300px,yellow);
+    .test(@bg-color:red,@h:100px,@w:100px);
+
+}
+.test(@bg-color:red,@h:100px,@w:100px){//参数都是默认值，当没有属性值时使用默认值
+    width:@w;
+    height:@h;
+    border:1px solid @bg-color;
+}    
+span{
+    color:average(red,yellow);
+}
+body{
+    color:aquamarine;
+    background-color:blueviolet;
+}
+body:hover{
+    background-color: darkorange;
+}

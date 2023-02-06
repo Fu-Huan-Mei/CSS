@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS编写位置</title>
+    <!--2023-1-11：第一遍理解记忆-->
+    <!-- 3、CSS：修改元素样式
+    （2）内部样式表：将样式编写到head中的style标签里，通过CSS选择器来选中元素并为其设置各种样式
+    优点：可以同时为多个标签设置样式，并且修改时只需修改一处即可全部应用
+    缺点：只对一个网页起作用，不能跨页面复用
+-->
+    <style>
+        p{
+            color:chartreuse;
+            font-size:medium;
+
+        }
+    </style>
+
+    <!--3、CSS：修改元素样式
+（3）外部样式表：将CSS样式编写到外部的CSS文件中,然后通过link标签引入外部的CSS文件
+优点：只要想使用样式的网页，均可对其引用，最佳实践；可以使用浏览器的缓存机制，加快网页的加载速度，提高用户体验-->
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <!--
+        1、网页的组成：结构(HTML)、表现(CSS)、行为(JavaScript)
+        2、CSS-层叠样式表：设置网页中元素的样式
+        （网页是多层结构，通过CSS可以分别为网页的每一层来设置样式，但最终我们只看网页的最上边一层)
+        3、CSS：修改元素样式
+        （1）内联样式：在标签内部通过style属性来设置元素的样式，但样式只对一个标签生效（不用）
+        （如果希望影响到多个元素必须在每一个元素中都复制一遍，修改不便）
+    -->
+        <p style="color:red; font-size:30px;">锄禾日当午，汗滴禾下土。</p>
+        <p>谁知盘中餐，粒粒皆辛苦。</p>
+       
+      
+    
+</body>
+</html>

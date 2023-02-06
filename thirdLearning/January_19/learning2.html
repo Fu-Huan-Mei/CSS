@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高</title>
+    <style>/*第一遍理解记忆：2023-1-19*/
+        div{
+            height:100px;
+            font-size:50px;
+            border:1px red solid;
+            /*行高(line-height)
+            1、含义：文字占有的实际高度
+            2、设置：line-height
+            3、属性值：指定大小（px/em)，也可以指定整数（行高是字体大小的指定倍数）
+            4、分配：行高在字体框的上下平均分配*/
+            /* line-height:200px; */
+            /* line-height:2; */
+            /*5、垂直居中：将行高设置为和高度一样的值，使单行文字在一个元素中垂直居中*/
+            line-height: 100px;
+            /*6、行间距：行高可以用来设置文字的行间距：行间距=行高-字体大小*/
+            /*字体框
+            1、含义：字体存在的格子
+            2、设置：font-size设置字体框的高度*/
+        }
+    </style>
+</head>
+<body>
+    <div>今天天气真不错 hello world</div>
+    <div>今天天气真不错 hello world</div>
+    <div>今天天气真不错 hello world</div>
+    <div>今天天气真不错 hello world</div>
+</body>
+</html>

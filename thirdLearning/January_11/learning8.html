@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素</title>
+    <style>
+        p{
+            font-size:50px;
+        }
+         /*2023-1-11：第一遍理解记忆*/
+        /*
+        1、含义：表示页面中一些特殊的并不真实存在的元素（特殊位置）
+        2、使用：使用：：开头
+        3、内容：
+        （1)：：first-letter 表示第一个字母*/
+        p::first-letter{
+            color:red;
+        }
+        /*（2）：：first-line 表示第一行*/
+        p::first-line{
+            color:aqua;
+        }
+        /*（3）：：selection 表示选中的内容改变的状态*/
+        p::selection{
+            background-color: chartreuse;
+        }
+        /*（4）：：before 表示元素的开始位置
+        /*（5）：：after 表示元素的最后位置
+        上述两个伪元素必须结合content属性来使用，页面显示后不可以复制粘贴（保护版权）*/
+        div::before{
+            content:"abc";
+            color:greenyellow;
+            font-size: 30px;
+        }
+        div::after{
+            content:"abc";
+            color:greenyellow;
+            font-size: 30px;
+        }
+       
+        
+    
+    </style>
+</head>
+<body>
+    <q>短引用</q>
+    <br><br>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque doloremque facilis voluptatem eum iure sed dolor cupiditate dolores necessitatibus, mollitia, consequuntur eius nisi excepturi accusantium vel repellendus nulla unde maiores.
+    </p>
+    <br><br>
+    <div>hello world!</div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览器的默认样式</title>
+     <!--2023-1-12：第一遍理解记忆-->
+    <!--3、重置样式表：通过link标签引入
+    （1）reset.css：去除浏览器默认样式
+    （2）normalize.css：对默认样式进行统一-->
+    <link rel="stylesheet" href="../css.style/reset.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* body{
+            margin:0;
+        }
+        p{
+            margin:0;
+        } */
+        ul{
+            margin:0;
+            padding:0;
+            /* margin-left: 20px; */
+        /*2、list-style：去除列表的项目符号*/
+            list-style:none;
+        }
+/*
+1、默认样式：通常情况下，浏览器为元素设置默认样式，会影响页面的布局，编写网页时会去除默认样式（PC端的页面）
+*/
+        .box1{
+            width:200px;
+            height:200px;
+            border:1px black solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>我是一个段落</p>
+    <ul>
+        <li>结构</li>
+        <li>表现</li>
+        <li>新闻</li>
+    </ul>
+</body>
+</html>

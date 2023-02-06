@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷问题最终解决方案</title>
+    <style>/*第一遍理解记忆：2023-1-17*/
+        .box1{
+            border:10px red solid;
+            /* overflow: hidden; */
+        }
+        .box2{
+            width:100px;
+            height:200px;
+            background-color: aqua;
+            float:left;
+        }
+        /* .box3{
+            clear:both;
+        } */
+        /*伪元素：行内元素*/
+        .box1::after{
+            content:'';
+            display: block;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <!-- <div class="box3">3</div> -->
+    </div>
+    
+</body>
+</html>

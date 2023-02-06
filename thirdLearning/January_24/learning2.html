@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长表格</title>
+</head>
+<body>
+    <table>
+        <!--    第一遍理解记忆：2023-1-24  -->
+        <!--
+        1、将一个表格分为3个部分：头部(thead) 主体(tbody) 底部(tfoot)
+        2、th：表示头部单元格-->
+        <thead>
+            <tr>
+                <!-- <td>日期</td>
+                <td>收入</td>
+                <td>支出</td>
+                <td>合计</td> -->
+                <th>日期</th>
+                <th>收入</th>
+                <th>支出</th>
+                <th>合计</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2023.1.24</td>
+                <td>500</td>
+                <td>200</td>
+                <td>300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>合计</td>
+                <td>300</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

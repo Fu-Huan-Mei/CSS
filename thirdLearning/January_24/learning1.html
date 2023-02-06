@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格（格式化数据）</title>
+</head>
+<body>
+    <!--    第一遍理解记忆：2023-1-24  -->
+    <!--
+    1、概述：表示格式化的数据 eg:课程表、成绩单......
+    2、创建：table标签
+    3、行：tr表示表格中的一行，有几个tr就有几行
+    4、单元格：td表示表格中的一个单元格，有几个td就有几个单元格-->
+    <table>
+        <tr>
+            <td>a1</td>
+            <td>b1</td>
+            <td>c1</td>
+            <td>d1</td>
+        </tr>
+        <tr>
+            <td>a2</td>
+            <td>b2</td>
+            <td>c2</td>
+        <!--5、rowspan：纵向合并单元格-->
+            <td rowspan="2">d2</td>
+        </tr>
+        <tr>
+            <td>a3</td>
+            <td>b3</td>
+            <td>c3</td>
+            <td>d3</td>
+        </tr>
+   
+    <tr>
+        <td>a4</td>
+        <td>b4</td>
+     <!--4、colspan:横向合并单元格-->
+        <td colspan="2">c3</td>
+        
+    </tr>
+    </table>
+</body>
+</html>

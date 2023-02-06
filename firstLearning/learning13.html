@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高度塌陷:BFC</title>
+    <style>
+        /* .box1{
+            width:200px;
+            height:200px;
+            background-color: aqua ;
+            /* 问题1：向左浮动 ,会覆盖box2*/
+            /* float:left; 
+            overflow: hidden;
+
+        } */
+        /* .box2{
+            width:200px;
+            height:200px;
+            background-color:orange;
+            /* 解决方式1：开启BFC模式 
+            overflow:hidden;
+        } */
+        /* .box3{
+            width:100px;
+            height:100px;
+            background-color:yellow;
+            margin-top:100px;
+        } */
+        div{
+            font-size: 50px;
+        }
+        .box1{
+            width:200px;
+            height:200px;
+            background-color: #bfa;
+            float:left;
+        }
+    
+        .box3{
+            width:200px;
+            height:200px;
+            background-color: orange;
+            clear:left;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box1">
+        <div class="box3"></div>
+    </div> -->
+    <!-- <div class="box2">
+    </div> -->
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    
+</body>
+</html>

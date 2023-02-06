@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>盒子垂直方向的布局</title>
+    <style>
+        .box1{
+            width:200px;
+            height:200px;
+            background-color: aqua;
+            overflow:auto;
+
+        }
+         /*2023-1-12：第一遍理解记忆*/
+/*
+1、元素溢出：子元素是在父元素的内容区中排列的，如果子元素的大小超过了父元素，则子元素会从父元素中溢出
+2、overflow属性：解决子元素溢出问题：属性值/可选值：
+（1）visible，默认值 ，子元素会从父元素中溢出，在父元素外部的位置显示
+（2）hidden：溢出内容将会被裁剪不会显示
+（3）scroll：生成两个滚动条，通过滚动条来查看完整内容
+（4）auto：根据需要生成滚动条
+3、overflow-x(水平方向滚动条) overflow-y(垂直方向滚动条)
+*/
+        .box2{
+            width:100px;
+            height:400px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div> -->
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aspernatur sunt maiores similique voluptas, libero eius voluptatum qui, aliquam autem aperiam quas. Eveniet quasi error harum reiciendis, eum fuga et!
+    </div>
+</body>
+</html>

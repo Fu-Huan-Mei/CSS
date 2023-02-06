@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        1、将ul里的第一个li设置为红色
+        
+        ul>li:first-child{
+            color:red;
+        }
+        ul>li:nth-child(2n+1){
+            color:blue;
+        }
+        ul>li:nth-child(2n){
+            color:yellow;
+        }
+        ul>li:first-of-type{
+            color:purple;
+        }
+        ul>li:not(li:nth-of-type(2)){
+            color:orangered;
+        }
+        a:link{
+            font-size:40px;
+            color:green;
+        }
+        a:visited{
+            
+            color:red;
+        }
+        a:hover{
+            color:red;
+            font-size:50px;
+        }
+        a:active{
+            color:green;
+        }
+        p{
+            color:yellowgreen;
+        }
+        p::first-letter{
+            color:red;
+            font-size:20px;
+        }
+        p::first-line{
+            background-color:yellow;
+        }
+        p::selection{
+            background-color:greenyellow;
+        }
+        div::before{
+            content:'和🤣';
+            color:red;
+        }
+        div::after{
+            content:'abc';
+            color:red;
+        }
+        p{
+            color:red;
+            background-color:orange;
+        }
+        div{
+            color:yellowgreen;
+        }
+        body{
+            font-size:30px;
+        }*/
+        /*id选择器：100*/
+        #boss{
+            background-color:orange;
+        }
+        /*元素选择器：1*/
+        div{
+            background-color:yellow;
+        }
+        /*类选择器：10*/
+        .red{
+            background-color:red;
+        }
+        /*交集选择器*/
+        div#boss{
+            background-color: aquamarine;
+        }
+        div,p{
+            background-color: aqua !important;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div id="boss" class="red">我是一个div</div>
+    <p>
+        我是p元素
+        <span>我是p元素中的span</span>
+    </p>
+    <!--
+    <span>我是p元素外的span</span>
+    <div>
+        我是div
+        <span>
+            我是div中的span
+            <em>我是span中的em</em>
+        </span>
+    </div>
+
+     <div>hello hello hello hello hello how are you</div>
+   <ul>
+        <span>我是一个span</span>
+        <li>第0个</li>
+        <li class="first">第一个</li>
+        <li>第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li>第五个</li>
+    </ul>
+    <a href="https:www.baidu.com">访问过的百度</a>
+    <br><br>
+    <a href="https:www.baidu123.com">没有访问过的百度</a>
+    <a href="https:www.baidu123.com">没有访问过的百度</a>
+    <p>
+        花半开最美，情留白最浓，懂得给 生命 留白，亦是一种生活的智慧。 
+        淡泊以明志，宁静以致远，懂得给心灵留白，方能在纷杂繁琐的世界，淡看得失，宠辱不惊，去意无留；
+        懂得给感情留白，方能持久生香，留有余地，相互欣赏，拥有默契；
+        懂得给生活留白，揽一份诗意，留一份淡定，多一份睿智，生命方能如诗如画。 人心，远近相安，时光，浓淡相宜。
+        有些风景要远观，才能美好；有些人情要淡然，才会久远，人生平淡更持久，留白方能生远，莲养心中，随遇而安，生命的最美不过是懂得的距离。
+    </p>-->
+   
+    
+</body>
+</html>

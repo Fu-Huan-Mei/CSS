@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘滞定位</title>
+    <link rel="stylesheet" href="../December_29/css/reset.css">
+    <style>
+        .body{
+            height: 3000px;
+        }
+        /*1、设置nav的大小*/
+        .nav{
+            width:1205px;
+            height:48px;
+            /*设置背景颜色*/
+            background-color: #E8E7E3;
+            /*设置水平居中*/
+            margin:100px auto;
+            position:sticky;
+            top:10px;
+            /*当元素的position:sticky，则开启了元素的粘滞定位
+            粘滞定位和相对定位特点基本一致
+            但是粘滞定位可以在元素到达某个位置以后就将其固定
+            兼容性较差*/
+        }
+
+        /*2、设置nav中的li*/
+        .nav li{
+            float:left;
+            /* height:48px; */
+            /*将文字在父元素中垂直居中*/
+            line-height:48px;
+        }
+        /*设置a行内元素的样式*/
+        .nav a{
+            /*将a转换为块元素*/
+            display:block;
+            /*去除下划线*/
+            text-decoration: none;
+            /*设置字体颜色*/
+            color:#777;
+            /*修改字体大小*/
+            font-size:18px;
+            padding:0 39px;
+        }
+        /*设置鼠标移入效果*/
+        .nav a:hover{
+            /*鼠标移入时的背景颜色*/
+            background-color: #3F3F3F;
+            /*字体颜色·*/
+            color:#E8E7E3;
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav">
+        <li>
+        <a href="javascript:;">HTML/CSS</a>
+        </li>
+        <li>
+        <a href="javascript:;">Browser Side</a>
+        </li>
+        <li>
+        <a href="javascript:;">Server Side</a>
+        </li>
+        <li>
+        <a href="javascript:;">Programming</a>
+        </li>
+        <li>
+        <a href="javascript:;">XML</a>
+        </li>
+        <li>
+        <a href="javascript:;">Web Building</a>
+        </li>
+        <li>
+        <a href="javascript:;">Reference</a>
+        </li>
+    </ul>
+   
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体查询</title>
+    <!--
+    1、概述：网页会根据窗口大小呈现不同效果；使用响应式布局，可以使一个网页适用于所有设备
+    2、关键：媒体查询
+    3、作用：通过媒体查询，可以为不同设备或设备的不同状态来分别设置样式  eg：手机、电脑
+    -->
+    <style>
+        /*4、媒体查询
+        （1）语法： @media 查询规则{}
+        （2）媒体类型：all所有设备、print打印设备、screen带屏幕设备、speech屏幕阅读器*/
+        @media all{
+            body{
+                background-color: aqua;
+            }
+        }
+        /*（3）逗号：使用,连接多个设备类型，或关系*/
+        @media print,screen{
+            body{
+                background-color: coral;
+            }
+        }
+        /*（4）only在媒体类型前添加only，表示只有；主要为了兼容老版本的浏览器*/
+        @media only screen{
+            body{
+                background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

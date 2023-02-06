@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器</title>
+    <style>
+         /*2023-1-11：第一遍理解记忆*/
+        /*将ul的第一个li设为红色*/
+        /*伪类（不存在的类，特殊的类）
+        1、含义：描述元素特殊状态  eg:被点击元素、鼠标移入的元素、第一个子元素......
+        2、使用：一般情况下：使用：开头
+        （1）：first-child 表示第一个子元素
+        */
+        ul>li:first-child{
+            color:red;
+        }
+        /*（2）：last-child 表示最后一个子元素*/
+        ul>li:last-child{
+            color:aqua;
+        }
+        /*（3）：nth-child() 表示第n个子元素,
+        n表示0到正无穷
+        2n表示选中偶数位的元素 even
+        2n+1表示奇数位的元素 odd*/
+        /* ul>li:nth-child(2n){
+            color:rgb(115, 0, 255);
+        } */
+        /*3、排序：以上伪类都是根据所有子元素进行排序*/
+/*4、:first-of-type :last-of-type :nth-of-type() 
+这几类伪元素的功能与上述伪元素类似，不同点是它们在同类元素中排序*/
+        ul>li:first-of-type{
+            color:deeppink;
+        }
+        /*5、:not() 表示否定伪类：将符合条件的元素从选择器中去除*/
+        ul>li:not(:nth-child(3)){
+            font-size:50px;
+        }
+        /* ul>li:not(:nth-of-type(3)){
+            font-size:50px;
+        } */
+
+    </style>
+</head>
+<body>
+    <ul>
+        <span>我是一个span</span>
+        <li>第0个</li>
+        <li>第一个</li>
+        <li >第二个</li>
+        <li>第三个</li>
+        <li>第四个</li>
+        <li>第五个</li>
+    </ul>
+    
+</body>
+</html>

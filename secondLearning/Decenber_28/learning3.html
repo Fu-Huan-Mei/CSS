@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器</title>
+    <style>
+        p::first-letter{
+            font-size:50px;
+        }
+        p::first-line{
+            background-color: aqua;
+        }
+        p::selection{
+            background-color: aquamarine;
+        }
+        div::before{
+            content:'abcdefg';
+            color:red;
+        }
+        div::after{
+            content:'哈哈哈哈哈';
+            color:purple;
+        }
+        /*
+        1、关系选择器
+        2、伪类选择器
+        3、伪元素选择器
+        4、伪元素：页面中特殊并不真实存在的元素（特殊位置），伪元素使用：：开头
+        ::first-letter表示第一个字母;  ::first-line表示第一行；::slection表示选中的内容的样式
+        ::before表示元素的开始位置；::after表示元素的结束位置;before和after必须结合content属性来使用
+
+        */
+        /* a:link{/*link表示没访问过的链接，正常的链接
+            color:red;
+            font-size:50px;
+        }
+        a:visited{/*visited表示访问过的链接，由于隐私的原因
+            color:orange;
+        }
+        /*:hover表示鼠标移入的状态
+        a:hover{
+            color:greenyellow;
+        }
+        /*active表示鼠标点击
+        a:active{
+            color:blueviolet;
+        } */
+
+    </style>
+</head>
+<body>
+    <!-- <a href="https://www.baidu.com">访问过的链接</a>
+    <br><br>
+    <a href="https://www.baidu123.com">没访问过的链接</a> -->
+    <div>hello,how are you!</div>
+    <p>徐小平演讲中哪些将影响你的人生格局：“人生远比我们想象的漫长，所以不争一城一池的得失，把一切机会和挫折都放到尽可能长的周期里来思考。”
+    不好意思我第一次当大人，应该知道除了能力的进阶更需要格局的修炼格局养成，你的人生没有上限所谓选手和高手，差的是格局与远见你的能力决定你能得到什么，而你的格局，却会决定你最终能走到哪里
+    这是一本值得认真阅读的励志书，是一部成长的智慧手册。作者从自己的所见所闻和亲身经历着手，用充满智慧的文字，将自己对生活的感悟分享与无数的年轻人。生活不可能一帆风顺，成长也必然伴随着泪水与汗水。社会、职场与生活，亲情、友情与爱情，该怎样取舍，又该如何争取？这本书有你想要的答案。
+    陶瓷兔子， Linkedln强推专栏作者、成长话题女王，微博读书书评人，网易云阅读颇受欢迎订阅源，破20亿次阅读原创公众号。一个始终坚信知识就是力量的姑娘，于喧嚣中坚守自己，将温情润于笔墨，书写出一句句成长的智慧心语。
+    </p>
+    
+</body>
+</html>

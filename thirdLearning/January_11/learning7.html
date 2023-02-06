@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>超链接的伪类</title>
+    <style>
+         /*2023-1-11：第一遍理解记忆*/
+        /*1、:link 表示没访问过的链接（正常的链接）*/
+        a:link{
+            color:red;
+            font-size: 50px;
+        }
+        /*2、:visited 表示访问过的链接*/
+        a:visited{
+            color:orange;
+        }
+        /*3、由于隐私的原因，所以visited这个伪类只能修改链接的颜色*/
+        /*4、:hover 表示鼠标移入状态*/
+        a:hover{
+            color:green;
+        }
+        /*5、：active 表示鼠标点击状态*/
+        a:active{
+            color:aqua;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <a href="https://www.baidu.com">访问过的链接</a>
+    <br><br>
+    <a href="https://www.baidu123.com">没访问过的链接</a>
+    
+</body>
+</html>

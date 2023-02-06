@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片列表</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        /*设置body背景颜色（真实开发中不需要写）*/
+        body{
+            background-color: antiquewhite;
+
+        }
+        /*设置ul的样式*/
+        .img-list{
+            /*设置ul的宽度*/
+            width:190px;
+            /*设置ul的高度*/
+            height:470px;
+            /*裁剪溢出的内容*/
+            overflow: hidden;
+            /*使ul在页面居中（实际开发不需要写）*/
+            margin:50px auto;
+            background-color: #F4F4F4;
+        }
+        /*设置li的位置*/
+        .img-list li{
+            margin-bottom: 9px;
+        }
+        /*设置图片大小*/
+        .img-list img{
+            width:100%;
+        }
+
+    </style>
+</head>
+<body>
+    <!--方式一：<div>
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+    </div>-->
+    <ul class="img-list">
+        <li> 
+            <a href="javascript:;">
+                <img src="../picture/02/1.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="../picture/02/2.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="javascript:;">
+                <img src="../picture/02/3.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+    
+</body>
+</html>

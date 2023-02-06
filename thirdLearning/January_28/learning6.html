@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>less简介</title>
+    <style>
+        html{
+            /*2、CSS原生就支持变量的设置，但是兼容性较差*/
+            --color:yellow;
+            --length:100px;
+        }
+        .box1{
+            /*3、calc()函数：计算函数，但是浏览器兼容性较差*/
+            /* width:calc(200px *2); */
+            /* width:var(--length);
+            height:var(--length);
+            background-color: var(--color); */
+            width:100px;
+            height:100px; 
+            background-color: aqua;
+        }
+        .box2{
+            width:100px;
+            height:100px;
+            background-color:chartreuse;
+        }
+        .box3{
+            width:80px;
+            height:80px;
+            border:10px solid black;
+        }
+    </style>
+</head>
+<body>
+<!-- 1、概述：less是CSS的预处理语言，是CSS的增强版，编写更少的代码实现更强大的样式
+2、新特性
+（1）对变量的支持
+（2）对mixin的支持
+3、语法：less的语法和css语法基本一致，但是less钟添加了许多对css的扩展，
+所以浏览器无法直接执行less代码，要执行必须向将less转为css，再由浏览器执行
+4、VScode插件：Easy Less插件-->
+   
+    <div class="box1">aaa</div>
+    <div class="box2">aaa</div>
+    <div class="box3">aaa</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>粘滞定位</title>
+    <style>/*第一遍理解记忆：2023-1-18*/
+
+body{
+    font-size:50px;
+    height:2000px;
+}
+.box1{
+    width:200px;
+    height:200px;
+    background-color: aqua;
+}
+.box2{
+/*1、概述：当元素的position的属性设置为sticky时，则开启了元素的粘滞定位
+2、特点：粘滞定位和相对定位的特点基本一致，但不同的是粘滞定位可以在元素到达某个位置时将其固定*/
+    position:sticky;
+    top:0px;
+    width:200px;
+    height:200px;
+    background-color:chartreuse;
+}
+.box3{
+    width:200px;
+    height:200px;
+    background-color:deeppink;
+}
+    </style>
+</head>
+<body>
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单的布局</title>
+    <style >
+        /*网页的布局*/
+        /*提取元素中的公共样式*/
+        /* header,main,footer{
+            width:1000px;
+            margin:0 auto;
+        } */
+
+        /*创建网页的头部*/
+        header{
+            width:1000px;
+            height:150px;
+            background-color:yellow;
+            margin:0 auto;
+        }
+        
+        /*创建网页的主体*/
+        main{
+            width:1000px;
+            height:400px;
+            background-color:burlywood;
+            margin:10px auto;
+        } 
+        /*提取元素中的公共样式*/
+        /* nav,article,aside{
+            float:left;
+            height:100%;
+        } */
+        nav{
+            width:200px;
+            height:100%;
+            background-color:aqua;
+            float:left;
+        }
+        article{
+            width:580px;
+            height:100%;
+            background-color:orange;
+            float:left;
+            margin:0 10px;
+            /* margin-left: 10px;
+            margin-right: 10px; */
+        }
+        aside{
+            width:200px;
+            height:100%;
+            background-color:deeppink;
+            float:left;
+        }
+
+        /*创建网页的底部*/
+        footer{
+            width:1000px;
+            height:150px;
+            background-color:chartreuse;
+            margin:0 auto;
+        } 
+
+    </style>
+</head>
+<body>
+    <!--创建网页的头部-->
+    <header></header>
+    <!--创建网页的主体-->
+    <main>
+        <!--左侧导航条-->
+        <nav></nav>
+        <!--主体中间内容-->
+        <article></article>
+        <!--右侧边框栏-->
+        <aside></aside>
+    </main>
+    <!--创建网页的底部-->
+    <footer></footer>
+    
+</body>
+</html>

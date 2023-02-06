@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他文本样式</title>
+    <style>/*第一遍理解记忆：2023-1-19*/
+        .box1{
+            font-size:50px;
+            /*text-decoration
+            1、作用：设置文本修饰
+            2、可选值：none什么都没有、underline下划线、line-through删除线、overline上划线*/
+            /* text-decoration: line-through; */
+            text-decoration: overline;
+        }
+        .box2{
+            /*设置省略号，以下属性缺一不可*/
+            width:200px;
+            /* white-space
+            1、作用：设置网页如何处理空白
+            2、可选值：normal正常、nowrap不换行、pre保留空白*/
+            white-space:nowrap;
+            overflow: hidden;
+            /*text-overflow：ellipsis设置省略号*/
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div class="box2">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dicta totam eveniet delectus! Vitae, necessitatibus minima? Itaque quidem hic architecto esse delectus. Debitis eius numquam incidunt soluta et expedita tempora.
+    </div>
+    <!-- <div class="box1">
+        今天天气真不错
+    </div> -->
+</body>
+</html>
